@@ -43,7 +43,7 @@ const Document = new mongoose.model('docs', documentSchema);
 const storage = multer.diskStorage({
 destination: (req, file, cb)=>{
 try {
-if(file.mimetype !== 'applica􀆟on/pdf')
+if(file.mimetype !== 'application/pdf')
 {
 cb('Only pdf file is supported');
 }
