@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, ini􀆟al-scale=1.0">
+<title>Documents</title>
+<link rel="stylesheet"
+href="h􀆩ps://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-12 mt-5">
+<form ac􀆟on="/document-uploads" enctype="mul􀆟part/form-data" method="post">
+<div class="form-group">
+<input type="hidden" name="id" id="id">
+<label for="docs">Registra􀆟on Documents</label>
+<input type="file" mul􀆟ple name="docs" id="docs" class="form-control"
+accept="applica􀆟on/pdf">
+</div>
+<div class="form-group mt-5 text-center">
+<bu􀆩on type="submit" class="btn btn-primary">Register</bu􀆩on>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search)
+document.getElementById('id').value = params.get('id');
+</script>
+</body>
+</html>
